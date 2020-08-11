@@ -1,0 +1,46 @@
+.todo-item {
+  &__container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    box-shadow: 0 0px 10px #ff6868;
+    margin: 20px auto;
+    background: #565656;
+    border-radius: 5px;
+
+    &.done {
+      box-shadow: 0 0px 10px #68ff52;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      background: #565656;
+      color: #61daee;
+      font-size: 1.5rem;
+      letter-spacing: 0.07em;
+    }
+    span {
+      cursor: pointer;
+      height: 20px;
+      width: min-content;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 20px;
+      color: #ff6868;
+    }
+
+    .fa.fa-check {
+      &.done {
+        color: #68ff52;
+      }
+    }
+  }
+
+  &__name {
+    width: 70%;
+    border: 1px solid rgb(238, 152, 121);
+  }
+}

@@ -1,0 +1,60 @@
+.todoList-container {
+  min-height: 60vh;
+  width: 60vw;
+  min-width: 375px;
+  background-color: #252424;
+  border-radius: 10px;
+  box-shadow: 0 1px 14px;
+  padding: 20px;
+  height: max-content;
+  margin-bottom: 20px;
+
+  .header {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .body {
+    .list-items {
+      &__container {
+        margin: 30px 0;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        background: #333133;
+        box-shadow: 0 1px 5px #565656;
+        min-height: 50px;
+      }
+
+      &__header {
+        width: max-content;
+        margin: 0 auto;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+  .footer {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    color: #fff;
+    background-color: #252424;
+    border: 1px solid #fff;
+    border-radius: 3px;
+
+    cursor: pointer;
+    width: 30%;
+    outline: none;
+    &:hover {
+      color: #e0dada;
+      background-color: #4a4949;
+    }
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+  }
+}
